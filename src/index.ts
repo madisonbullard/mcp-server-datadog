@@ -7,30 +7,30 @@
  * With a design built for scalability, future integrations with additional Datadog APIs are anticipated.
  */
 
+import { v1, v2 } from '@datadog/datadog-api-client'
 import { Server } from '@modelcontextprotocol/sdk/server/index.js'
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
 } from '@modelcontextprotocol/sdk/types.js'
-import { log, mcpDatadogVersion } from './utils/helper'
-import { INCIDENT_TOOLS, createIncidentToolHandlers } from './tools/incident'
-import { METRICS_TOOLS, createMetricsToolHandlers } from './tools/metrics'
-import { LOGS_TOOLS, createLogsToolHandlers } from './tools/logs'
-import { MONITORS_TOOLS, createMonitorsToolHandlers } from './tools/monitors'
 import {
   DASHBOARDS_TOOLS,
   createDashboardsToolHandlers,
 } from './tools/dashboards'
-import { TRACES_TOOLS, createTracesToolHandlers } from './tools/traces'
+import { DOWNTIMES_TOOLS, createDowntimesToolHandlers } from './tools/downtimes'
 import { HOSTS_TOOLS, createHostsToolHandlers } from './tools/hosts'
-import { ToolHandlers } from './utils/types'
+import { INCIDENT_TOOLS, createIncidentToolHandlers } from './tools/incident'
+import { LOGS_TOOLS, createLogsToolHandlers } from './tools/logs'
+import { METRICS_TOOLS, createMetricsToolHandlers } from './tools/metrics'
+import { MONITORS_TOOLS, createMonitorsToolHandlers } from './tools/monitors'
+import { RUM_TOOLS, createRumToolHandlers } from './tools/rum'
+import { TRACES_TOOLS, createTracesToolHandlers } from './tools/traces'
 import { createDatadogConfig } from './utils/datadog'
-import { createDowntimesToolHandlers, DOWNTIMES_TOOLS } from './tools/downtimes'
-import { createRumToolHandlers, RUM_TOOLS } from './tools/rum'
-import { v2, v1 } from '@datadog/datadog-api-client'
+import { log, mcpDatadogVersion } from './utils/helper'
+import { ToolHandlers } from './utils/types'
 
-const server = new Server(
+export const server = new Server(
   {
     name: 'Datadog MCP Server',
     version: mcpDatadogVersion,
