@@ -1,6 +1,6 @@
 {
   "name": "@madisonbullard/mcp-server-datadog",
-  "version": "1.5.0-export-5",
+  "version": "1.5.0-export-6",
   "description": "MCP server for interacting with Datadog API",
   "repository": {
     "type": "git",
@@ -9,13 +9,6 @@
   "type": "module",
   "bin": {
     "mcp-server-datadog": "./build/index.js"
-  },
-  "exports": {
-    ".": "./src/index.ts",
-    "./*": [
-      "./src/*/index.ts",
-      "./src/*.ts"
-    ]
   },
   "main": "build/index.js",
   "module": "build/index.js",
