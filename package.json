@@ -1,10 +1,10 @@
 {
-  "name": "@winor30/mcp-server-datadog",
+  "name": "@madisonbullard/mcp-server-datadog",
   "version": "1.5.0",
   "description": "MCP server for interacting with Datadog API",
   "repository": {
     "type": "git",
-    "url": "https://github.com/winor30/mcp-server-datadog.git"
+    "url": "https://github.com/madisonbullard/mcp-server-datadog.git"
   },
   "type": "module",
   "bin": {
