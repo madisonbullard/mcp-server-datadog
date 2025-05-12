@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 /**
  * This script sets up the mcp-server-datadog.
  * It initializes an MCP server that integrates with Datadog for incident management.
