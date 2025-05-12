@@ -10,6 +10,13 @@
   "bin": {
     "mcp-server-datadog": "./build/index.js"
   },
+  "exports": {
+    ".": "./src/index.ts",
+    "./*": [
+      "./src/*/index.ts",
+      "./src/*.ts"
+    ]
+  },
   "main": "build/index.js",
   "module": "build/index.js",
   "types": "build/index.d.ts",
