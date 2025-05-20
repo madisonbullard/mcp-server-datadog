@@ -5,7 +5,7 @@ import { createHostsToolHandlers } from '../../src/tools/hosts/tool'
 import { createMockToolRequest } from '../helpers/mock'
 import { http, HttpResponse } from 'msw'
 import { setupServer } from '../helpers/msw'
-import { baseUrl, DatadogToolResponse } from '../helpers/datadog'
+import { baseUrl, type DatadogToolResponse } from '../helpers/datadog'
 
 const hostsBaseEndpoint = `${baseUrl}/v1/hosts`
 const hostBaseEndpoint = `${baseUrl}/v1/host`

@@ -26,7 +26,7 @@ import { RUM_TOOLS, createRumToolHandlers } from './tools/rum'
 import { TRACES_TOOLS, createTracesToolHandlers } from './tools/traces'
 import { createDatadogConfig } from './utils/datadog'
 import { log, mcpDatadogVersion } from './utils/helper'
-import { ToolHandlers } from './utils/types'
+import type { ToolHandlers } from './utils/types'
 
 export const server = new Server(
   {

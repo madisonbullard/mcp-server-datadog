@@ -5,7 +5,7 @@ import { createDashboardsToolHandlers } from '../../src/tools/dashboards/tool'
 import { createMockToolRequest } from '../helpers/mock'
 import { http, HttpResponse } from 'msw'
 import { setupServer } from '../helpers/msw'
-import { baseUrl, DatadogToolResponse } from '../helpers/datadog'
+import { baseUrl, type DatadogToolResponse } from '../helpers/datadog'
 
 const dashboardEndpoint = `${baseUrl}/v1/dashboard`
 

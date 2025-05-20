@@ -1,5 +1,5 @@
-import { Tool } from '@modelcontextprotocol/sdk/types.js'
-import { ZodSchema } from 'zod'
+import type { Tool } from '@modelcontextprotocol/sdk/types.js'
+import type { ZodSchema } from 'zod'
 import zodToJsonSchema from 'zod-to-json-schema'
 
 type JsonSchema = Record<string, any> // eslint-disable-line @typescript-eslint/no-explicit-any

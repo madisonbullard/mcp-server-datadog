@@ -1,5 +1,5 @@
-import { RequestHandler } from 'msw'
-import { SetupServerApi, setupServer as setupServerNode } from 'msw/node'
+import type { RequestHandler } from 'msw'
+import { type SetupServerApi, setupServer as setupServerNode } from 'msw/node'
 
 export function setupServer(...handlers: RequestHandler[]) {
   const server = setupServerNode(...handlers)

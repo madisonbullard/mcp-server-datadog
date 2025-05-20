@@ -1,5 +1,5 @@
-import { ExtendedTool, ToolHandlers } from '../../utils/types'
-import { v2 } from '@datadog/datadog-api-client'
+import type { ExtendedTool, ToolHandlers } from '../../utils/types'
+import type { v2 } from '@datadog/datadog-api-client'
 import { createToolSchema } from '../../utils/tool'
 import { GetLogsZodSchema, GetAllServicesZodSchema } from './schema'
 

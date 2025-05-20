@@ -1,5 +1,5 @@
-import { ExtendedTool, ToolHandlers } from '../../utils/types'
-import { v1 } from '@datadog/datadog-api-client'
+import type { ExtendedTool, ToolHandlers } from '../../utils/types'
+import type { v1 } from '@datadog/datadog-api-client'
 import { createToolSchema } from '../../utils/tool'
 import { GetMonitorsZodSchema } from './schema'
 import { unreachable } from '../../utils/helper'
